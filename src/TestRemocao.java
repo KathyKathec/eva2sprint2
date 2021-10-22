@@ -10,7 +10,7 @@ public class TestRemocao {
 		Connection connection = factory.recuperarConexao();
 		
 		Statement stm = connection.createStatement();
-		stm.execute("DELETE FROM PRODUTO WHERE ID >3");
+		stm.execute("DELETE FROM PRODUTO WHERE desconto");
 		
 		Integer linhasModificadas = stm.getUpdateCount();
 		
